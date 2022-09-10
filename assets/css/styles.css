@@ -1,0 +1,133 @@
+body{
+    background-color: #333 !important;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar img {
+    width: 45px;
+    height: 45px;
+    margin: 5px;
+    padding: 0;
+}
+
+.head_container{
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.head_container img{
+    position: relative;
+    width: 70%;
+    height: 50%;
+    align-items: center;
+    background-color: #333;
+}
+
+.row {
+    height: 100%;
+}
+
+body > .row >.column_left {
+    background-color: #333;
+    color: #fff;
+    opacity: 1;
+    height: 100%;
+    width: 70%;
+    float: left;
+    padding: 10px 30px 0 20px;
+}
+
+.column_left h2{
+    position: relative;
+    padding-top: 20px;
+    text-align: center;
+    color: #b91010;
+}
+
+.column_left h3{
+    position: relative;
+    padding-top: 20px;
+    text-align: center;
+    color: #7ed957;
+}
+
+.column_left img{
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body > .row > .column_right {
+    background-color: #333;
+    color: #fff;
+    opacity: 1;
+    width: 30%;
+    float: right;
+    padding: 10px 20px 0 10px;
+}
+
+.column_right h3{
+    position: relative;
+    padding-top: 40px;
+    text-align: center;
+    color: #7ed957;
+}
+
+.column_right th, td {
+    padding: 0 20px;
+}
+
+.container__image{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    background-image:url('/assets/img/quigon_face.PNG');
+    background-size:cover;
+    transition: ease-in-out .3s;
+    z-index:2;
+}
+
+.container__image:before{
+    content: ' ';
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    bottom:0;
+    left:0;
+    margin:auto;
+    background: inherit;
+    background-position:bottom;
+    filter:blur(40px) saturate(0%);
+    transform:scaleX(0.4);
+    transition:ease-in-out .4s;
+    border-radius:120px;
+    transform-origin:right;
+    opacity:0;
+    z-index:-1;
+}
+
+.container__info{
+    position:relative;
+    line-height:1.8;
+    transition:ease-in-out .3s;
+    opacity:0;
+}
+
+.container__info:before{
+    transform:translate3d(-60%,0px,0px);
+    opacity:1;
+}
