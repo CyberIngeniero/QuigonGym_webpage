@@ -1,7 +1,7 @@
 # Quigon Gym
 ## Web Page Proyect
 
-![logo gym](https://github.com/CyberIngeniero/Quigon_Gym/blob/main/assets/img/logo_gym.PNG?raw=true)
+![logo gym](/assets/img/logo_gym_readme.png)
 
 Page for Front-End Development Intro Course Master Full Stack Web  Development 2022.
 
