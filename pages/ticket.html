@@ -11,11 +11,41 @@
     <div class="container">
         <div class="wrapper">
             <div class="ticket">
-                <h1>FreePass</h1>
                 <div class="bg"></div>
+                <section class="head_content" id="head_content">
+                    <img src="/assets/img/logo_gym_readme.png" alt="logo_gym">
+                </section>
+
+                <section class="body_content" id="body_content">
+                    <h1>FreePass</h1>
+                    <div class="dataForm">Padawan:<br><span id="padawan"></span></div>
+                    <div class="dataForm">Real Name:<br><span id="realName"></span></div>
+                    <div class="dataForm">Last Name:<br><span id="lastName"></span></div>
+                    <div class="dataForm">Email:<br><span id="email"></span></div>
+                    <div class="dataForm">Center:<br><span id="trainCenter"></span></div>
+                    <div class="dataForm">Master:<br><span id="master"></span></div>
+                </section>
             </div>
         </div>
     </div>
+
+    <script>
+        const formData = JSON.parse(localStorage.getItem('formData'));
+
+        const padawan = formData.padawan;
+        const realName = formData.realName;
+        const lastName = formData.lastName;
+        const email = formData.email;
+        const trainCenter = formData.trainCenter;
+        const master = formData.master;
+
+        document.getElementById('padawan').textContent = padawan;
+        document.getElementById('realName').textContent = realName;
+        document.getElementById('lastName').textContent = lastName;
+        document.getElementById('email').textContent = email;
+        document.getElementById('trainCenter').textContent = trainCenter;
+        document.getElementById('master').textContent = master;
+    </script>
 
     <script type="module" src="/assets/js/index.js"></script>
 </body>

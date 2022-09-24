@@ -23,7 +23,7 @@
         </div>
 
         <div class="container-form">
-            <form name="freepass-form" id="fp-form" action="/pages/ticket.html" method="post">
+            <form name="freepass-form" id="fp-form" action="/pages/ticket.html" method="get">
                 <div class="row">
                     <div class="form-column">
                         <label for="PadawanName">Nombre Padawan </label>
@@ -55,10 +55,10 @@
 
                         <label for="Master">Maestro Tutor</label>
                         <select name="Master" id="Master">
-                            <option value="">Qui Gon Jinn</option>
-                            <option value="">Obi Wan Kenobi</option>
-                            <option value="">Mace Windu</option>
-                            <option value="">Yoda</option>
+                            <option value="1">Qui Gon Jinn</option>
+                            <option value="2">Obi Wan Kenobi</option>
+                            <option value="3">Mace Windu</option>
+                            <option value="4">Yoda</option>
                         </select>
                         <br>
                     </div>
@@ -73,5 +73,39 @@
             <button type="submit" form="fp-form" value="Submit">Get FrePass</button>
         </div>
     </div>
+
+    <script>
+        const form = document.getElementById('fp-form');
+        const padawan = document.getElementById('PadawanName');
+        const realName = document.getElementById('RealName');
+        const lastName = document.getElementById('LastName');
+        const email = document.getElementById('Email');
+
+        const trainSelector = document.getElementById('TrainCenter');
+        const trainCenter = trainSelector.options[trainSelector.selectedIndex].text;
+        console.log(trainCenter);
+
+        const masterSelector = document.getElementById('Master');
+        const master = masterSelector.options[masterSelector.selectedIndex].text;
+        console.log(master);
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const formData = {
+                padawan: padawan.value,
+                realName: realName.value,
+                lastName: lastName.value,
+                email: email.value,
+                trainCenter: trainCenter,
+                master: master
+            }
+
+            localStorage.setItem('formData', JSON.stringify(formData));
+
+            window.location.href = '/pages/ticket.html';
+        });
+
+    </script>
 </body>
 </html>
