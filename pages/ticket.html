@@ -1,52 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FreePass</title>
-    <link rel="stylesheet" href="/assets/css/ticket.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/assets/css/ticket.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="wrapper">
-            <div class="ticket">
-                <div class="bg"></div>
-                <section class="head_content" id="head_content">
-                    <img src="/assets/img/logo_gym_readme.png" alt="logo_gym">
-                </section>
-
-                <section class="body_content" id="body_content">
-                    <h1>FreePass</h1>
-                    <div class="dataForm">Padawan:<br><span id="padawan"></span></div>
-                    <div class="dataForm">Real Name:<br><span id="realName"></span></div>
-                    <div class="dataForm">Last Name:<br><span id="lastName"></span></div>
-                    <div class="dataForm">Email:<br><span id="email"></span></div>
-                    <div class="dataForm">Center:<br><span id="trainCenter"></span></div>
-                    <div class="dataForm">Master:<br><span id="master"></span></div>
-                </section>
-            </div>
+      <div class="wrapper">
+        <div class="ticket">
+          <div class="bg"></div>
+          <section class="head_content" id="head_content">
+            <img src="/assets/img/header.png" alt="logo_gym" />
+            <h1>FreePass</h1>
+          </section>
+          <div class="infoFP" id="infoFP">
+            <section class="body_content" id="body_content_left">
+              <div class="dataForm">
+                Padawan:<br /><span id="padawan"></span>
+              </div>
+              <div class="dataForm">
+                Real Name:<br /><span id="realName"></span>
+              </div>
+              <div class="dataForm">
+                Last Name:<br /><span id="lastName"></span>
+              </div>
+            </section>
+            <section class="body_content" id="body_content_right">
+              <div class="dataForm">Email:<br /><span id="email"></span></div>
+              <div class="dataForm">
+                Center:<br /><span id="trainCenter"></span>
+              </div>
+              <div class="dataForm">Master:<br /><span id="master"></span></div>
+            </section>
+          </div>
         </div>
+      </div>
     </div>
 
     <script>
-        const formData = JSON.parse(localStorage.getItem('formData'));
+      const formData = JSON.parse(localStorage.getItem("formData"));
 
-        const padawan = formData.padawan;
-        const realName = formData.realName;
-        const lastName = formData.lastName;
-        const email = formData.email;
-        const trainCenter = formData.trainCenter;
-        const master = formData.master;
+      const padawan = formData.padawan;
+      const realName = formData.realName;
+      const lastName = formData.lastName;
+      const email = formData.email;
+      const trainCenter = formData.trainCenter;
+      const master = formData.master;
 
-        document.getElementById('padawan').textContent = padawan;
-        document.getElementById('realName').textContent = realName;
-        document.getElementById('lastName').textContent = lastName;
-        document.getElementById('email').textContent = email;
-        document.getElementById('trainCenter').textContent = trainCenter;
-        document.getElementById('master').textContent = master;
+      document.getElementById("padawan").textContent = padawan;
+      document.getElementById("realName").textContent = realName;
+      document.getElementById("lastName").textContent = lastName;
+      document.getElementById("email").textContent = email;
+      document.getElementById("trainCenter").textContent = trainCenter;
+      document.getElementById("master").textContent = master;
     </script>
 
     <script type="module" src="/assets/js/index.js"></script>
-</body>
+  </body>
 </html>

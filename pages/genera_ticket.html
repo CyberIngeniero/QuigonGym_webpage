@@ -86,11 +86,9 @@
 
         const trainSelector = document.getElementById('TrainCenter');
         const trainCenter = trainSelector.options[trainSelector.selectedIndex].text;
-        console.log(trainCenter);
 
         const masterSelector = document.getElementById('Master');
         const master = masterSelector.options[masterSelector.selectedIndex].text;
-        console.log(master);
 
         form.addEventListener('submit', (e) => {
             e.preventDefault();
@@ -105,7 +103,6 @@
             }
 
             localStorage.setItem('formData', JSON.stringify(formData));
-
             window.location.href = '/pages/ticket.html';
         });
 

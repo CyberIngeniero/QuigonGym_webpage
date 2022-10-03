@@ -1,223 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Quigon Gym</title>
 
+    <!-- Favicon -->
+    <link href="/assets/img/favicon.ico" rel="icon" type="image/x-icon" />
+
     <!-- CSS Styles -->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap.min.css"
+    />
     <!-- Font-Awesome -->
-    <link rel="stylesheet" type= "text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-</head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"></script>
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <!--NAVBAR-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <img src="assets/img/logo.png" alt="logo" href="#">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Porqué nosotros?</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Precios</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Inscripciones</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contactanos</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="/pages/genera_ticket.html">Free Pass</a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="true">
-                            Además...
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Soporte Fitness</a>
-                            <a class="dropdown-item" href="#">Clases</a>
-                            <a class="dropdown-item" href="#">Entrenamientos</a>
-                            <a class="dropdown-item" href="#">Servicios</a>
-                        </div>
-                    </li>
+      <!--NAVBAR-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="/assets/img/logo.png"
+              alt="Logo"
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/genera_ticket.html"
+                  >Free Pass</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Porqué nosotros?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Planes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Inscripciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contactanos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Ademas
+                </a>
+                <ul class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Soporte Fitness</a>
+                  <a class="dropdown-item" href="#">Clases</a>
+                  <a class="dropdown-item" href="#">Entrenamientos</a>
+                  <a class="dropdown-item" href="#">Servicios</a>
                 </ul>
-            </div>
-        </nav>
-
-        <!--HEAD-->
-        <div class="head_container">
-            <img src="assets/img/logo_gym.PNG" alt="gym_logo">
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+
+      <!--HEAD-->
+      <div class="head_container">
+        <img src="assets/img/header.PNG" alt="gym_logo" />
+      </div>
     </header>
 
-    <!--LEFT COLUMN-->
     <div class="row">
-        <div class="column_left">
-            <h2>Alejate del lado Oscuro de la Fuerza y Conviertete en un Maestro Jedi.</h2>
-            <p>En Quigon Gym encontraras los mejores entrenadores para que puedas entrenar como un Maestro Jedi.</p>
-            <p>Ademas de entrenar con nosotros, podras comprar distintos productos para fortalecer tu conexión con la
-                fuerza.</p>
+      <!--LEFT COLUMN-->
+      <div class="column_left">
+        <h2>
+          Alejate del lado Oscuro de la Fuerza y Conviertete en un Maestro Jedi.
+        </h2>
+        <p>
+          En Quigon Gym encontraras los mejores entrenadores para que puedas
+          entrenar como un Maestro Jedi.
+        </p>
+        <p>
+          Ademas de entrenar con nosotros, podras comprar distintos productos
+          para fortalecer tu conexión con la fuerza.
+        </p>
 
-            <h3>Entrenadores</h3>
-            <div class="container">
-                <div class="row g-3">
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="class">
-                            <img src="assets/img/MP-YodaSpecies.webp" alt="Master Yoda" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">Master Yoda</h5>
-                                <p class="card-text"> Entrenador legendario, el más fuerte con y en Fuerza.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="class">
-                            <img src="assets/img/Obi_Wan_8.webp" alt="Master Obi-Wan" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">Master Obi-Wan Kenobi</h5>
-                                <p class="card-text"> Entrenador noble y bien dotado con la fuerza.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="class">
-                            <img src="assets/img/Qui-_Gon_Jinn.png" alt="Master Qui-Gon Jinn" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">Master Qui-Gon Jinn</h5>
-                                <p class="card-text"> El entrenador más carismatico y con gran cardio.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="class">
-                            <img src="assets/img/Mace_Windu_render.webp" alt="Master Mace Windu" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">Master Mace Windu</h5>
-                                <p class="card-text"> El entrenador más <strong>cool</strong> de la fuerza.</p>
-                            </div>
-                        </div>
-                    </div>
+        <h3>Entrenadores</h3>
+        <div class="container">
+          <div class="row g-3">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="class">
+                <img
+                  src="assets/img/MP-YodaSpecies.webp"
+                  alt="Master Yoda"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Master Yoda</h5>
+                  <p class="card-text">
+                    Entrenador legendario, el más fuerte con y en Fuerza.
+                  </p>
                 </div>
+              </div>
             </div>
-            <h3>Productos</h3>
-            <img src="assets/img/cositas.jpg" alt="cositas" width="300" height="200">
-            <ul>
-                <li>Camisetas</li>
-                <li>Figuras</li>
-                <li>Libros</li>
-                <li>Accesorios</li>
-            </ul>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="class">
+                <img
+                  src="assets/img/Obi_Wan_8.webp"
+                  alt="Master Obi-Wan"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Master Obi-Wan Kenobi</h5>
+                  <p class="card-text">
+                    Entrenador noble y bien dotado con la fuerza.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="class">
+                <img
+                  src="assets/img/Qui-_Gon_Jinn.png"
+                  alt="Master Qui-Gon Jinn"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Master Qui-Gon Jinn</h5>
+                  <p class="card-text">
+                    El entrenador más carismatico y con gran cardio.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="class">
+                <img
+                  src="assets/img/Mace_Windu_render.webp"
+                  alt="Master Mace Windu"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Master Mace Windu</h5>
+                  <p class="card-text">
+                    El entrenador más <strong>cool</strong> de la fuerza.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3>Productos</h3>
+        <div
+          id="carouselExampleDark"
+          class="carousel carousel-dark slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img
+                src="/assets/img/prod_1.webp"
+                alt="class"
+                ="d-block w-100"
+                alt="producto_1"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="/assets/img/prod_2.jpg"
+                class="d-block"
+                alt="producto_2"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/assets/img/prod_3.webp"
+                class="d-block"
+                alt="producto_3"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/assets/img/prod_4.webp"
+                class="d-block"
+                alt="producto_4"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <!--RIGHT COLUMN-->
+      <div class="column_right">
+        <div class="container__image">
+          <img src="/assets/img/quigon_face.PNG" alt="quigon_face" />
         </div>
 
-        <!--RIGHT COLUMN-->
-        <div class="column_right">
-
-            <div class="container__image">
-                <div class="container__info container__author">Maestro Qui-Gon Jinn</a></div>
-                <div class="container__info">Portador de Conocimiento y Sabiduria.</div>
-            </div>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h3>Horario</h3>
-            
-                        <table class="table table-hover table-dark table-bordered align-middle">
-                            <caption><em>*Sujeto a disponibilidad por aforos</em></caption>
-                            <thread>
-                                <tr>
-                                    <th>Dia</th>
-                                    <th>Horario</th>
-                                </tr>
-                            </thread>
-                            <tbody>
-                                <tr>
-                                    <td>Lunes</td>
-                                    <td>9:00 - 14:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Martes</td>
-                                    <td>9:00 - 14:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Miercoles</td>
-                                    <td>9:00 - 14:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Jueves</td>
-                                    <td>9:00 - 14:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Viernes</td>
-                                    <td>9:00 - 14:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Sabado</td>
-                                    <td>9:00 - 14:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Domingo</td>
-                                    <td>Cerrado</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-            
-                </div>
-            
-            </div>
+        <div class="table-responsive">
+          <h3>Horario</h3>
+          <table
+            class="table table-hover table-dark table-bordered align-middle"
+          >
+            <caption>
+              <em>*Sujeto a disponibilidad por aforos</em>
+            </caption>
+            <thread>
+              <tr>
+                <th>Dia</th>
+                <th>Horario</th>
+              </tr>
+            </thread>
+            <tbody>
+              <tr>
+                <td>Lunes</td>
+                <td>9:00 - 14:00</td>
+              </tr>
+              <tr>
+                <td>Martes</td>
+                <td>9:00 - 14:00</td>
+              </tr>
+              <tr>
+                <td>Miercoles</td>
+                <td>9:00 - 14:00</td>
+              </tr>
+              <tr>
+                <td>Jueves</td>
+                <td>9:00 - 14:00</td>
+              </tr>
+              <tr>
+                <td>Viernes</td>
+                <td>9:00 - 14:00</td>
+              </tr>
+              <tr>
+                <td>Sabado</td>
+                <td>9:00 - 14:00</td>
+              </tr>
+              <tr>
+                <td>Domingo</td>
+                <td>Cerrado</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+      </div>
     </div>
-    <!-- Footer start -->
-<footer class="bg-dark text-white pt-5 pb-4">
+  </body>
+  <!-- Footer -->
+  <footer class="text-white pt-5 pb-4">
     <div class="row text-center text-md-left">
-        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h5 class="text-uppercase mb-4 font-weight-bold">Contacto</h5>
-            <p>
-                <i class="fa fa-home fa-fw"></i>Templo Jedi, Coruscant 66
-            </p>
-            <p>
-                <i class="fa fa-envelope fa-fw"></i>master_quigon@consejojedi.com
-            </p>
-            <p>
-                <i class="fa fa-phone fa-fw"></i>+(666) 666 666 666
-            </p>
-
-        </div>
-        
+      <div class="col-md-3 col-lg-3 col-xl- mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold">Contacto</h5>
+        <p><i class="fa fa-home fa-fw"></i>Templo Jedi, Coruscant 66</p>
+        <p><i class="fa fa-envelope fa-fw"></i>master_quigon@consejojedi.com</p>
+        <p><i class="fa fa-phone fa-fw"></i>+(666) 666 666 666</p>
+      </div>
     </div>
-
-</footer>
-<!-- Footer end -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.slim.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/js/bootstrap.min.js"></script>
-</body>
-
+  </footer>
 </html>
