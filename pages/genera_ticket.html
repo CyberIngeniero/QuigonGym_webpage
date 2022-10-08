@@ -1,111 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Get-FreePass</title>
-    <link rel="stylesheet" href="/assets/css/form.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="../assets/css/form.css" />
+  </head>
+  <body>
     <div class="box">
+      <div class="box-header">
+        <img src="../assets/img/logo_gym_readme.png" alt="logo_gym" />
+      </div>
 
-        <div class="box-header">
-            <img src="/assets/img/logo_gym_readme.png" alt="logo_gym">
-        </div>
+      <div id="slider" class="slider">
+        <ul id="slideWrap">
+          <li><img src="../assets/img/maestro_obi.jpg" alt="" /></li>
+          <li><img src="../assets/img/quigon_face.PNG" alt="" /></li>
+          <li><img src="../assets/img/obi_face.jpg" alt="" /></li>
+        </ul>
+      </div>
 
-        <div id="slider" class="slider">
-            <ul id="slideWrap"> 
-                <li><img src="/assets/img/maestro_obi.jpg" alt=""></li>
-                <li><img src="/assets/img/quigon_face.PNG" alt=""></li>
-                <li><img src="/assets/img/obi_face.jpg" alt=""></li>
-            </ul>
-        </div>
+      <div class="container-form">
+        <form
+          name="freepass-form"
+          id="fp-form"
+          action="./ticket.html"
+          method="get"
+        >
+          <div class="row">
+            <div class="form-column">
+              <label for="PadawanName">Nombre Padawan </label>
+              <input type="text" id="PadawanName" required />
+              <br />
 
-        <div class="container-form">
-            <form name="freepass-form" id="fp-form" action="/pages/ticket.html" method="get">
-                <div class="row">
-                    <div class="form-column">
-                        <label for="PadawanName">Nombre Padawan </label>
-                        <input type="text" id="PadawanName" required/>
-                        <br>
+              <label for="RealName">Nombre Real </label>
+              <input type="text" id="RealName" required />
+              <br />
 
-                        <label for="RealName">Nombre Real </label>
-                        <input type="text" id="RealName" required/>
-                        <br>
+              <label for="LastName">Apellidos </label>
+              <input type="text" id="LastName" required />
+              <br />
+            </div>
 
-                        <label for="LastName">Apellidos </label>
-                        <input type="text" id="LastName" required/>
-                        <br>
-                    </div>
+            <div class="form-column">
+              <label for="Email">Email</label>
+              <input
+                type="email"
+                placeholder="Ingrese su email"
+                id="Email"
+                required
+              />
+              <br />
 
-                    <div class="form-column">
-                        <label for="Email">Email</label>
-                        <input type="email" placeholder="Ingrese su email" id="Email" required/>
-                        <br>
+              <label for="TrainCenter">Centro de Entrenamiento</label>
+              <select name="trainCenter" id="TrainCenter">
+                <option value="1">Coruscant</option>
+                <option value="2">Alderan</option>
+                <option value="3">Templo Jedi</option>
+                <option value="4">Naboo</option>
+              </select>
+              <br />
 
-                        <label for="TrainCenter">Centro de Entrenamiento</label>
-                        <select name="trainCenter" id="TrainCenter">
-                            <option value="1">Coruscant</option>
-                            <option value="2">Alderan</option>
-                            <option value="3">Templo Jedi</option>
-                            <option value="4">Naboo</option>
-                        </select>
-                        <br>
+              <label for="Master">Maestro Tutor</label>
+              <select name="Master" id="Master">
+                <option value="1">Qui Gon Jinn</option>
+                <option value="2">Obi Wan Kenobi</option>
+                <option value="3">Mace Windu</option>
+                <option value="4">Yoda</option>
+              </select>
+              <br />
+            </div>
+          </div>
 
-                        <label for="Master">Maestro Tutor</label>
-                        <select name="Master" id="Master">
-                            <option value="1">Qui Gon Jinn</option>
-                            <option value="2">Obi Wan Kenobi</option>
-                            <option value="3">Mace Windu</option>
-                            <option value="4">Yoda</option>
-                        </select>
-                        <br>
-                    </div>
-                </div>
+          <br />
+        </form>
+      </div>
 
-                <br>
-            </form>
-        </div>
-
-        <br>
-        <div class="form-button">
-            <button type="submit" form="fp-form" value="Submit">Get FrePass</button>
-            <br>
-            <button type="reset" form="fp-form" value="Reset">Reset Data</button>
-        </div>
+      <br />
+      <div class="form-button">
+        <button type="submit" form="fp-form" value="Submit">Get FrePass</button>
+        <br />
+        <button type="reset" form="fp-form" value="Reset">Reset Data</button>
+      </div>
     </div>
 
     <script>
-        const form = document.getElementById('fp-form');
-        const padawan = document.getElementById('PadawanName');
-        const realName = document.getElementById('RealName');
-        const lastName = document.getElementById('LastName');
-        const email = document.getElementById('Email');
+      const form = document.getElementById("fp-form");
+      const padawan = document.getElementById("PadawanName");
+      const realName = document.getElementById("RealName");
+      const lastName = document.getElementById("LastName");
+      const email = document.getElementById("Email");
 
-        const trainSelector = document.getElementById('TrainCenter');
-        const trainCenter = trainSelector.options[trainSelector.selectedIndex].text;
+      const trainSelector = document.getElementById("TrainCenter");
+      const trainCenter =
+        trainSelector.options[trainSelector.selectedIndex].text;
 
-        const masterSelector = document.getElementById('Master');
-        const master = masterSelector.options[masterSelector.selectedIndex].text;
+      const masterSelector = document.getElementById("Master");
+      const master = masterSelector.options[masterSelector.selectedIndex].text;
 
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
 
-            const formData = {
-                padawan: padawan.value,
-                realName: realName.value,
-                lastName: lastName.value,
-                email: email.value,
-                trainCenter: trainCenter,
-                master: master
-            }
+        const formData = {
+          padawan: padawan.value,
+          realName: realName.value,
+          lastName: lastName.value,
+          email: email.value,
+          trainCenter: trainCenter,
+          master: master,
+        };
 
-            localStorage.setItem('formData', JSON.stringify(formData));
-            window.location.href = '/pages/ticket.html';
-        });
-
+        localStorage.setItem("formData", JSON.stringify(formData));
+        window.location.href = "./ticket.html";
+      });
     </script>
-</body>
+  </body>
 </html>
